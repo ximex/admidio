@@ -17,7 +17,6 @@
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
  ***********************************************************************************************
  */
-
 // create path to plugin
 $plugin_folder_pos = strpos(__FILE__, 'adm_plugins') + 11;
 $plugin_file_pos   = strpos(__FILE__, 'login_form.php');
@@ -30,38 +29,38 @@ if(!defined('PLUGIN_PATH'))
 {
     define('PLUGIN_PATH', substr(__FILE__, 0, $plugin_folder_pos));
 }
-require_once(PLUGIN_PATH. '/../adm_program/system/common.php');
+require_once(PLUGIN_PATH.'/../adm_program/system/common.php');
 
 // Sprachdatei des Plugins einbinden
 $gL10n->addLanguagePath(PLUGIN_PATH. '/'.$plugin_folder.'/languages');
 
-require_once(PLUGIN_PATH. '/'.$plugin_folder.'/config.php');
+require_once(PLUGIN_PATH.'/'.$plugin_folder.'/config.php');
 
 // pruefen, ob alle Einstellungen in config.php gesetzt wurden
 // falls nicht, hier noch mal die Default-Werte setzen
-if(!isset($plg_show_register_link) || !is_numeric($plg_show_register_link))
+if(!isset($plg_show_register_link) || !is_bool($plg_show_register_link))
 {
-    $plg_show_register_link = 1;
+    $plg_show_register_link = true;
 }
 
-if(!isset($plg_show_email_link) || !is_numeric($plg_show_email_link))
+if(!isset($plg_show_email_link) || !is_bool($plg_show_email_link))
 {
-    $plg_show_email_link = 1;
+    $plg_show_email_link = true;
 }
 
-if(!isset($plg_show_logout_link) || !is_numeric($plg_show_logout_link))
+if(!isset($plg_show_logout_link) || !is_bool($plg_show_logout_link))
 {
-    $plg_show_logout_link = 1;
+    $plg_show_logout_link = true;
 }
 
-if(!isset($plg_show_icons) || !is_numeric($plg_show_icons))
+if(!isset($plg_show_icons) || !is_bool($plg_show_icons))
 {
-    $plg_show_icons = 1;
+    $plg_show_icons = true;
 }
 
 if(isset($plg_link_target) && $plg_link_target !== '_self')
 {
-    $plg_link_target = ' target="'. strip_tags($plg_link_target). '" ';
+    $plg_link_target = ' target="'.strip_tags($plg_link_target).'" ';
 }
 else
 {
@@ -81,14 +80,14 @@ if(isset($page) && is_object($page))
 }
 
 echo '<div id="plugin_'. $plugin_folder. '" class="admidio-plugin-content">';
-    if($gValidLogin)
-    {
-        echo '<h3>'.$gL10n->get('SYS_REGISTERED_AS').'</h3>';
-    }
-    else
-    {
-        echo '<h3>'.$gL10n->get('SYS_LOGIN').'</h3>';
-    }
+if($gValidLogin)
+{
+    echo '<h3>'.$gL10n->get('SYS_REGISTERED_AS').'</h3>';
+}
+else
+{
+    echo '<h3>'.$gL10n->get('SYS_LOGIN').'</h3>';
+}
 
 if($gValidLogin)
 {
@@ -164,27 +163,31 @@ if($gValidLogin)
     echo '<div class="btn-group-vertical" role="group">';
 
     // show link for logout
-    if($plg_show_icons)
+    if ($plg_show_logout_link)
     {
-        echo '<a id="adm_logout_link" class="btn" href="'.$g_root_path.'/adm_program/system/logout.php"><img
-            src="'. THEME_PATH. '/icons/door_in.png" alt="'.$gL10n->get('SYS_LOGOUT').'" />'.$gL10n->get('SYS_LOGOUT').'</a>';
+        if($plg_show_icons)
+        {
+            echo '<a id="adm_logout_link" class="btn" href="'.$g_root_path.'/adm_program/system/logout.php"><img
+                src="'. THEME_PATH. '/icons/door_in.png" alt="'.$gL10n->get('SYS_LOGOUT').'" />'.$gL10n->get('SYS_LOGOUT').'</a>';
+        }
+        else
+        {
+            echo '<a id="adm_logout_link" href="'.$g_root_path.'/adm_program/system/logout.php">'.$gL10n->get('SYS_LOGOUT').'</a>';
+        }
     }
-    else
-    {
-        echo '<a id="adm_logout_link" href="'.$g_root_path.'/adm_program/system/logout.php">'.$gL10n->get('SYS_LOGOUT').'</a>';
-    }
+
     echo '</div>';
 }
 else
 {
     // create and show the login form
-    if($plg_show_icons == 1)
+    if($plg_show_icons)
     {
         $iconCode  = THEME_PATH. '/icons/key.png';
     }
 
     $form = new HtmlForm('plugin-login-form', $g_root_path.'/adm_program/system/login_check.php', null,
-                         array('type' => 'vertical', 'setFocus' => false, 'showRequiredFields' => false));
+        array('type' => 'vertical', 'setFocus' => false, 'showRequiredFields' => false));
     $form->addInput('plg_usr_login_name', $gL10n->get('SYS_USERNAME'), null, array('property' => FIELD_REQUIRED, 'maxLength' => 35));
     // TODO Future: 'minLength' => 8
     $form->addInput('plg_usr_password', $gL10n->get('SYS_PASSWORD'), null, array('type' => 'password', 'property' => FIELD_REQUIRED));
@@ -245,14 +248,14 @@ else
 
         // Link bei Loginproblemen
         if($gPreferences['enable_password_recovery'] == 1
-        && $gPreferences['enable_system_mails'] == 1)
+            && $gPreferences['enable_system_mails'] == 1)
         {
             // neues Passwort zusenden
             $linkUrl  = $g_root_path.'/adm_program/system/lost_password.php';
             $linkText = $gL10n->get('SYS_PASSWORD_FORGOTTEN');
         }
         elseif($gPreferences['enable_mail_module'] == 1
-        && $roleWebmaster->getValue('rol_mail_this_role') == 3)
+            && $roleWebmaster->getValue('rol_mail_this_role') == 3)
         {
             // Mailmodul aufrufen mit Webmaster als Ansprechpartner
             $linkUrl = $g_root_path.'/adm_program/modules/messages/messages_write.php?rol_id='. $roleWebmaster->getValue('rol_id'). '&amp;subject='.$gL10n->get('SYS_LOGIN_PROBLEMS');

@@ -10,25 +10,25 @@
  */
 
 // Zeigt einen Link zum Registrieren unter dem Loginbutton an
-// 1 = (Default) Link wird angezeigt
-// 0 = Link wird nicht angezeigt
-$plg_show_register_link = 1;
+// true = (Default) Link wird angezeigt
+// false = Link wird nicht angezeigt
+$plg_show_register_link = true;
 
 // Zeigt einen Link um eine E-Mail an den Webmaster zu schreiben,
 // falls es Probleme beim Login gibt
-// 1 = (Default) Link wird angezeigt
-// 0 = Link wird nicht angezeigt
-$plg_show_email_link = 1;
+// true = (Default) Link wird angezeigt
+// false = Link wird nicht angezeigt
+$plg_show_email_link = true;
 
 // Zeigt nach dem Einloggen einen Link zum Ausloggen an
-// 1 = (Default) Link wird angezeigt
-// 0 = Link wird nicht angezeigt
-$plg_show_logout_link = 1;
+// true = (Default) Link wird angezeigt
+// false = Link wird nicht angezeigt
+$plg_show_logout_link = true;
 
 // Zeigt vor den Links noch zusaetzlich kleine Icons an
-// 1 = (Default) Icons werden angezeigt
-// 0 = Icons werden nicht angezeigt
-$plg_show_icons = 1;
+// true = (Default) Icons werden angezeigt
+// false = Icons werden nicht angezeigt
+$plg_show_icons = true;
 
 // Angabe des Ziels (target) in dem die Inhalte der Links geöffnet werden sollen
 // Hier koennen die ueblichen targets (_self, _top ...) oder Framenamen angegeben werden
@@ -43,4 +43,4 @@ $plg_rank = array(
     '50'  => $gL10n->get('PLG_LOGIN_ONLINE_MEMBER'),
     '100' => $gL10n->get('PLG_LOGIN_SENIOR_ONLINE_MEMBER'),
     '200' => $gL10n->get('PLG_LOGIN_HONORARY_MEMBER')
-    );
+);
