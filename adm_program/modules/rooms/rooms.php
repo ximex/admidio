@@ -31,7 +31,7 @@ $page = new HtmlPage($headline);
 // get module menu
 $roomsMenu = $page->getMenu();
 // show back link
-$roomsMenu->addItem('menu_item_back', $gNavigation->getPreviousUrl(), $gL10n->get('SYS_BACK'), 'back.png');
+$roomsMenu->addItem('menu_item_back', $gNavigation->getPreviousUrl(), $gL10n->get('SYS_BACK'), 'arrow-circle-left');
 // show link to create new room
 $roomsMenu->addItem('menu_item_new_room', $g_root_path.'/adm_program/modules/rooms/rooms_new.php?headline='.$textRoom,
                     $gL10n->get('SYS_CREATE_VAR', $textRoom), 'add.png');

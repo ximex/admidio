@@ -107,7 +107,7 @@ $page = new HtmlPage($headline);
 
 // add back link to module menu
 $registrationAssignMenu = $page->getMenu();
-$registrationAssignMenu->addItem('menu_item_back', $gNavigation->getPreviousUrl(), $gL10n->get('SYS_BACK'), 'back.png');
+$registrationAssignMenu->addItem('menu_item_back', $gNavigation->getPreviousUrl(), $gL10n->get('SYS_BACK'), 'arrow-circle-left');
 
 $page->addHtml('
     <p class="lead">'.$gL10n->get('SYS_SIMILAR_USERS_FOUND', $new_user->getValue('FIRST_NAME'). ' '. $new_user->getValue('LAST_NAME')).'</p>

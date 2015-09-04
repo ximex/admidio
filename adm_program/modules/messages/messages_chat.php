@@ -66,7 +66,7 @@ $page->addJavascript('
 
 // add back link to module menu
 $messagesChatMenu = $page->getMenu();
-$messagesChatMenu->addItem('menu_item_back', $gNavigation->getPreviousUrl(), $gL10n->get('SYS_BACK'), 'back.png');
+$messagesChatMenu->addItem('menu_item_back', $gNavigation->getPreviousUrl(), $gL10n->get('SYS_BACK'), 'arrow-circle-left');
 
 $page->addHtml('<div id="chat-wrap"><div id="chat-area"></div></div>');
 

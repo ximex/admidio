@@ -60,7 +60,7 @@ $page = new HtmlPage($headline);
 
 // add back link to module menu
 $roomsMenu = $page->getMenu();
-$roomsMenu->addItem('menu_item_back', $gNavigation->getPreviousUrl(), $gL10n->get('SYS_BACK'), 'back.png');
+$roomsMenu->addItem('menu_item_back', $gNavigation->getPreviousUrl(), $gL10n->get('SYS_BACK'), 'arrow-circle-left');
 
 // show form
 $form = new HtmlForm('rooms_edit_form', $g_root_path.'/adm_program/modules/rooms/rooms_function.php?room_id='.$getRoomId.'&amp;mode=1', $page);
@@ -76,7 +76,7 @@ $form->openGroupBox('gb_description', $gL10n->get('SYS_DESCRIPTION'), 'admidio-p
 $form->addEditor('room_description', null, $room->getValue('room_description'), array('height' => '150px'));
 $form->closeGroupBox();
 
-$form->addSubmitButton('btn_save', $gL10n->get('SYS_SAVE'), array('icon' => THEME_PATH.'/icons/disk.png'));
+$form->addSubmitButton('btn_save', $gL10n->get('SYS_SAVE'), array('icon' => 'save'));
 $form->addHtml(admFuncShowCreateChangeInfoById($room->getValue('room_usr_id_create'),
                                                $room->getValue('room_timestamp_create'),
                                                $room->getValue('dat_usr_id_change'),

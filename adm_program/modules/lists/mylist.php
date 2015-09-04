@@ -522,7 +522,7 @@ if($gCurrentUser->isWebmaster())
 // if mylist was not called directly then show link to navigate to previous page
 if($gNavigation->count() > 1)
 {
-    $myListMenu->addItem('menu_item_back', $gNavigation->getPreviousUrl(), $gL10n->get('SYS_BACK'), 'back.png');
+    $myListMenu->addItem('menu_item_back', $gNavigation->getPreviousUrl(), $gL10n->get('SYS_BACK'), 'arrow-circle-left');
 }
 
 // show form
