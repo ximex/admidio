@@ -9,7 +9,12 @@
  ***********************************************************************************************
  */
 
-/******************************************************************************
+namespace Admidio;
+
+/**
+ * @class Image
+ * @package Admidio
+ *
  * Folgende Methoden stehen zur Verfuegung:
  *
  * setImageFromPath($pathAndFilename)
@@ -30,8 +35,7 @@
  * scale($newXSize, $newYSize, $aspect_ratio = true)
  *                  - das Bild wird in einer vorgegebenen maximalen Laenge/Hoehe skaliert
  * delete()         - entfernt das Bild aus dem Speicher
- *
- *****************************************************************************/
+ */
 class Image
 {
     private $imagePath;

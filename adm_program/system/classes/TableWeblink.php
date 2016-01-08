@@ -6,14 +6,17 @@
  * @copyright 2004-2016 The Admidio Team
  * @see http://www.admidio.org/
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
- *
- * This class creates objects of the database table links.
- * You can read, change and create weblinks in the database.
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
- * Class TableWeblink
+ * @class TableWeblink
+ * @package Admidio
+ *
+ * This class creates objects of the database table links.
+ * You can read, change and create weblinks in the database.
  */
 class TableWeblink extends TableAccess
 {

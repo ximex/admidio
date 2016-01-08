@@ -6,12 +6,19 @@
  * @copyright 2004-2016 The Admidio Team
  * @see http://www.admidio.org/
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
+ ***********************************************************************************************
+ */
+
+namespace Admidio;
+
+/**
+ * @class TableInventory
+ * @package Admidio
  *
  * this Class is used to create an object from Inventory.
  * an item can be managed from this class
  *
  * Beside the methods of the parent class there are the following additional methods:
- ***********************************************************************************************
  */
 class TableInventory extends TableAccess
 {

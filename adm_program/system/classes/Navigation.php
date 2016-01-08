@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class Navigation
+ * @package Admidio
  * @brief Handle the navigation within a module and could create a html navigation bar
  *
  * This class stores every url that you add to the object in a stack. From

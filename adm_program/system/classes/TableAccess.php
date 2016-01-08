@@ -6,8 +6,12 @@
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
  ***********************************************************************************************
  */
+
+namespace Admidio;
+
 /**
  * @class TableAccess
+ * @package Admidio
  * @brief Controls read and write access to datbase tables
  *
  * This class should help you to read and write records of database tables.

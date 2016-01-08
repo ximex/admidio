@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class ModuleWeblinks
+ * @package Admidio
  * @brief Class manages weblinks viewable for user
  *
  * This class reads all available recordsets from table links.

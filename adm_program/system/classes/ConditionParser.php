@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class ConditionParser
+ * @package Admidio
  * @brief Creates from a custom condition syntax a sql condition
  *
  * The user can write a condition in a special syntax. This class will parse

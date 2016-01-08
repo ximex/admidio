@@ -9,8 +9,13 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
+use DateTime;
+
 /**
- * Class DateTimeExtended
+ * @class DateTimeExtended
+ * @package Admidio
  */
 class DateTimeExtended extends DateTime
 {

@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class modulemessages
+ * @package Admidio
  * @brief some functions for the messages module
  *
  * This class adds some functions that are used in the messages module to keep the

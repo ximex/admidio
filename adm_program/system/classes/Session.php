@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class Session
+ * @package Admidio
  * @brief Handle session data of Admidio and is connected to database table adm_sessions
  *
  * This class should be used together with the PHP session handling. If you

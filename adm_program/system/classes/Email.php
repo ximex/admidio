@@ -7,6 +7,19 @@
  * @see http://www.admidio.org/
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
  ***********************************************************************************************
+ */
+
+namespace Admidio;
+
+require_once(SERVER_PATH.'/adm_program/libs/phpmailer/PHPMailerAutoload.php');
+
+use PHPMailer;
+use phpmailerException;
+
+/**
+ * @class Email
+ * @package Admidio
+ *
  * Mit dieser Klasse kann ein Email-Objekt erstellt
  * und anschliessend verschickt werden.
  *
@@ -54,8 +67,7 @@
  *
  * Am Ende muss die Mail natuerlich noch gesendet werden:
  * function sendEmail();
- *
- *****************************************************************************/
+ */
 class Email extends PHPMailer
 {
     private $emText;     // plain text of email

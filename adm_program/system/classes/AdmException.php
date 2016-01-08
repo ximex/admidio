@@ -7,8 +7,13 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
+use Exception;
+
 /**
  * @class AdmException
+ * @package Admidio
  * @brief Admidio specific enhancements of the exception class
  *
  * This class extends the default PHP exception class with an Admidio specific

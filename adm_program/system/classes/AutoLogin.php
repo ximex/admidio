@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class AutoLogin
+ * @package Admidio
  * @brief Handle auto login with Admidio and manage it in the database
  *
  * The class search in the database table @b adm_auto_login for the session id.

@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class HtmlDiv
+ * @package Admidio
  * @brief  Create html div elements
  *
  * This class creates html div elements.

@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class HtmlTable
+ * @package Admidio
  * @brief Creates an Admidio specific table with special methods
  *
  * This class inherits the common HtmlTableBasic class and extends their elements

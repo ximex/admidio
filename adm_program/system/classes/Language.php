@@ -5,7 +5,13 @@
  * @see http://www.admidio.org/
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
  ***********************************************************************************************
+ */
+
+namespace Admidio;
+
+/**
  * @class Language
+ * @package Admidio
  * @brief Reads language specific texts that are identified with text ids out of language xml files
  *
  * The class will read a language specific text that is identified with their

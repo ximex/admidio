@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class ModuleMenu
+ * @package Admidio
  * @brief Class manages display of menus in modules
  *
  * This class manage the presentation of a module menu. You can add as many

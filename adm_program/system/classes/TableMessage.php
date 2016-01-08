@@ -6,9 +6,16 @@
  * @copyright 2004-2016 The Admidio Team
  * @see http://www.admidio.org/
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
+ ***********************************************************************************************
+ */
+
+namespace Admidio;
+
+/**
+ * @class TableMessage
+ * @package Admidio
  *
  * This class manages the set, update and delete in the table adm_messages
- ***********************************************************************************************
  */
 class TableMessage extends TableAccess
 {

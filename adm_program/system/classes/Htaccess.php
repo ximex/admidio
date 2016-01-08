@@ -9,7 +9,12 @@
  ***********************************************************************************************
  */
 
-/******************************************************************************
+namespace Admidio;
+
+/**
+ * @class Htaccess
+ * @package Admidio
+ *
  * Diese Klasse dient dazu ein .htaccessFile zu erstellen.
  * Ein Ordner kann ueber diese Klasse mit einem htaccess-File geschuetzt werden.
  * Von aussen ist dann kan Zugriff mehr erlaubt.
@@ -24,8 +29,7 @@
  *
  * protectFolder()      - Platziert ein htaccess-File im übergebenen Ordner
  * unprotectFolder()    - Löscht das htaccess-File im übergebenen Ordner
- *
- *****************************************************************************/
+ */
 class Htaccess
 {
     protected $folderPath;

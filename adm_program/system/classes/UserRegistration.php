@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class UserRegistration
+ * @package Admidio
  * @brief Creates, assign and update user registrations in database
  *
  * This class extends the User class with some special functions for new registrations.

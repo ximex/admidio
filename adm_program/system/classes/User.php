@@ -9,7 +9,12 @@
  ***********************************************************************************************
  */
 
-/******************************************************************************
+namespace Admidio;
+
+/**
+ * @class User
+ * @package Admidio
+ *
  * Diese Klasse dient dazu ein Userobjekt zu erstellen.
  * Ein User kann ueber diese Klasse in der Datenbank verwaltet werden
  *
@@ -30,8 +35,7 @@
  *                        einsehen darf
  * isWebmaster()        - gibt true/false zurueck, falls der User Mitglied der
  *                        Rolle "Webmaster" ist
- *
- *****************************************************************************/
+ */
 class User extends TableUsers
 {
     protected $webmaster;

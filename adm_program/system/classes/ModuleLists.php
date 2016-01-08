@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class ModuleLists
+ * @package Admidio
  * @brief Class manages lists viewable for user
  *
  * This class reads all available recordsets from table lists.

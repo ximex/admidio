@@ -7,13 +7,16 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 // provide forward compatibility with the password_* functions that ship with PHP 5.5
 require_once(SERVER_PATH.'/adm_program/libs/password_compat/password.php');
 // old phpass password hashing lib for backward compatibility
 require_once(SERVER_PATH.'/adm_program/libs/phpass/passwordhash.php');
 
 /**
- * Class PasswordHashing
+ * @class PasswordHashing
+ * @package Admidio
  *
  * This class provides static functions for different tasks for passwords and hashing
  * It used the "password_compat" lib to provide forward compatibility with the password_* functions that ship with PHP 5.5

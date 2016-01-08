@@ -6,8 +6,12 @@
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
  ***********************************************************************************************
  */
+
+namespace Admidio;
+
 /**
  * @class HtmlFormInstallation
+ * @package Admidio
  * @brief Create the html script for an installation / update form
  *
  * This class will create the complete html for a installation / update page.

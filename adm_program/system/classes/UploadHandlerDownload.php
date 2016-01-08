@@ -6,10 +6,16 @@
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
  ***********************************************************************************************
  */
+
+namespace Admidio;
+
 require_once(SERVER_PATH.'/adm_program/libs/jquery-file-upload/server/php/UploadHandler.php');
+
+use UploadHandler;
 
 /**
  * @class UploadHandlerDownload
+ * @package Admidio
  * @brief Improved checks and update of database after upload of files.
  *
  * This class extends the UploadHandler of the jquery-file-upload library. After

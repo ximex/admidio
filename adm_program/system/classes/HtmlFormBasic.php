@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class HtmlFormBasic
+ * @package Admidio
  * @brief  Create html form elements
  *
  * This class creates html form elements.

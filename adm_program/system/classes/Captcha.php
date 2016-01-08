@@ -9,7 +9,12 @@
  ***********************************************************************************************
  */
 
-/******************************************************************************
+namespace Admidio;
+
+/**
+ * @class Captcha
+ * @package Admidio
+ *
  * Diese Klasse erzeugt ein Captcha-Bildchen und speichert den zu
  * loesenden Code in der Session ab.
  *
@@ -48,8 +53,7 @@
  * {
  *    unset($_SESSION['captchacode']);
  * }
- *
- *****************************************************************************/
+ */
 class Captcha
 {
     private $font, $signature, $width, $height, $codeSize, $allowedChars;

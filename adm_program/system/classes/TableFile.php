@@ -9,7 +9,12 @@
  ***********************************************************************************************
  */
 
-/******************************************************************************
+namespace Admidio;
+
+/**
+ * @class TableFile
+ * @package Admidio
+ *
  * Diese Klasse dient dazu ein Fileobjekt zu erstellen.
  * Eine Datei kann ueber diese Klasse in der Datenbank verwaltet werden
  *
@@ -20,8 +25,7 @@
  *                           das Downloadmodul. Hier wird auch direkt ueberprueft ob die
  *                           Datei oder der Ordner gesperrt ist.
  * getCompletePathOfFile() - Gibt den kompletten Pfad der Datei zurueck
- *
- *****************************************************************************/
+ */
 class TableFile extends TableAccess
 {
     /**

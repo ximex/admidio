@@ -5,7 +5,13 @@
  * @see http://www.admidio.org/
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
  ***********************************************************************************************
+ */
+
+namespace Admidio;
+
+/**
  * @class LanguageData
+ * @package Admidio
  * @brief Stores language data in a class object
  *
  * This class stores data of the Language object. These are the paths to all

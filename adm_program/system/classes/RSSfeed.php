@@ -9,7 +9,12 @@
  ***********************************************************************************************
  */
 
-/******************************************************************************
+namespace Admidio;
+
+/**
+ * @class RSSfeed
+ * @package Admidio
+ *
  * Diese Klasse erzeugt ein RSSfeed-Objekt nach RSS 2.0.
  *
  * Das Objekt wird erzeugt durch Aufruf des Konstruktors:
@@ -29,8 +34,7 @@
  * function buildFeed()
  *
  * Spezifikation von RSS 2.0: http://www.feedvalidator.org/docs/rss2.html
- *
- *****************************************************************************/
+ */
 class RSSfeed
 {
     /**

@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class HtmlTableBasic
+ * @package Admidio
  * @brief  Create html tables
  *
  * This class creates html tables.

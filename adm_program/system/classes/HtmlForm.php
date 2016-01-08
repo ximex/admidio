@@ -7,6 +7,8 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 // constants for field property
 define('FIELD_DEFAULT',  0);
 define('FIELD_REQUIRED', 1);
@@ -16,6 +18,7 @@ define('FIELD_HIDDEN',   4);
 
 /**
  * @class HtmlForm
+ * @package Admidio
  * @brief Creates an Admidio specific form with special elements
  *
  * This class inherits the common HtmlFormBasic class and extends their elements

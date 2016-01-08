@@ -9,7 +9,12 @@
  ***********************************************************************************************
  */
 
-/******************************************************************************
+namespace Admidio;
+
+/**
+ * @class ListConfiguration
+ * @package Admidio
+ *
  * This class creates a list configuration object. With this object it's possible
  * to manage the configuration in the database. You can easily create new lists,
  * add new columns or remove columns.
@@ -24,8 +29,7 @@
  * countColumns()        - Anzahl der Spalten der Liste zurueckgeben
  * getSQL($roleIds, $memberStatus = 0)
  *                       - gibt das passende SQL-Statement zu der Liste zurueck
- *
- *****************************************************************************/
+ */
 class ListConfiguration extends TableLists
 {
     protected $columns = array(); // Array ueber alle Listenspaltenobjekte

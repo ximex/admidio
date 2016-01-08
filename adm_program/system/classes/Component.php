@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class Component
+ * @package Admidio
  * @brief Handle different components of Admidio (e.g. system, plugins or modules) and manage them in the database
  *
  * The class search in the database table @b adm_components for a specific component

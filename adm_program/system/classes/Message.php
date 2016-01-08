@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class Message
+ * @package Admidio
  * @brief Simple presentation of messages to the user
  *
  * This class creates a new html page with a simple headline and a message. It's

@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class ModuleDates
+ * @package Admidio
  * @brief This class reads date recordsets from database
  *
  * This class reads all available recordsets from table dates.

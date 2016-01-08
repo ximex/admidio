@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class TableMembers
+ * @package Admidio
  * @brief Handle memberships of roles and manage it in the database table adm_members
  *
  * The class search in the database table @b adm_members for role memberships of

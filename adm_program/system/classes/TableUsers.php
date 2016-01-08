@@ -6,6 +6,14 @@
  * @copyright 2004-2016 The Admidio Team
  * @see http://www.admidio.org/
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
+ ***********************************************************************************************
+ */
+
+namespace Admidio;
+
+/**
+ * @class TableUsers
+ * @package Admidio
  *
  * Diese Klasse dient dazu ein Userobjekt zu erstellen.
  * Ein User kann ueber diese Klasse in der Datenbank verwaltet werden
@@ -14,12 +22,6 @@
  *
  * updateLoginData()    - Anzahl Logins hochsetzen, Datum aktualisieren und
  *                        ungueltige Logins zuruecksetzen
- ***********************************************************************************************
- */
-require_once(SERVER_PATH.'/adm_program/system/classes/passwordhashing.php');
-
-/**
- * Class TableUsers
  */
 class TableUsers extends TableAccess
 {

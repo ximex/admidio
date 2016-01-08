@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class Database
+ * @package Admidio
  * @brief Handle the connection to the database, send all sql statements and handle the returned rows.
  *
  * This class creates a connection to the database and provides several methods

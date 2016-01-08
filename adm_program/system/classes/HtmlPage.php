@@ -5,7 +5,13 @@
  * @see http://www.admidio.org/
  * @license https://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2.0 only
  ***********************************************************************************************
+ */
+
+namespace Admidio;
+
+/**
  * @class HtmlPage
+ * @package Admidio
  * @brief Creates an Admidio specific complete html page
  *
  * This class creates a html page with head and body and integrates some Admidio

@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class HtmlElement
+ * @package Admidio
  * @brief  This @b abstract @b class parses html elements
  *
  * This abstract class is designed to parse html elements.

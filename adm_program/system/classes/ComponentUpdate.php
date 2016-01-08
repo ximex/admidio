@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class ComponentUpdate
+ * @package Admidio
  * @brief Manage the update of a component from the actual version to the target version
  *
  * The class is an extension to the component class and will handle the update of a

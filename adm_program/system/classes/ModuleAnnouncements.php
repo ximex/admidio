@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class ModuleAnnouncements
+ * @package Admidio
  * @brief This class reads announcement recordsets from database
  *
  * This class reads all available recordsets from table announcements

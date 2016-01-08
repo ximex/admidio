@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class HtmlList
+ * @package Admidio
  * @brief  Create html lists
  *
  * This class creates html list elements.

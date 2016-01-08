@@ -7,8 +7,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
  * @class Modules
+ * @package Admidio
  * @brief This @b abstract @b class defines a parameter set for modules
  *
  * This abstract class sets the parameters used in Admidio modules.

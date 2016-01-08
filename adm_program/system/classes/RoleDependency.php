@@ -9,8 +9,11 @@
  ***********************************************************************************************
  */
 
+namespace Admidio;
+
 /**
- * Class RoleDependency
+ * @class RoleDependency
+ * @package Admidio
  */
 class RoleDependency
 {
