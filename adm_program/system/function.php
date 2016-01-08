@@ -18,7 +18,7 @@
  */
 function admFuncAutoload($className)
 {
-    $fileName = SERVER_PATH. '/adm_program/system/classes/'.strtolower($className).'.php';
+    $fileName = SERVER_PATH. '/adm_program/system/classes/'.$className.'.php';
 
     if(file_exists($fileName))
     {
